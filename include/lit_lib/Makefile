@@ -42,4 +42,3 @@ re: fclean all
 lib: re
 	make clean
 	mv $(NAME) ../../$(NAME)
-

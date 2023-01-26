@@ -13,7 +13,13 @@ void game_loop(all_info *all)
         system("clear");
         print_tic_tac_toe(all);
         player_turn(all);
+        if ( verif_end(all))
+            break;
+        ai_turn(all);
+        usleep(4000000);
     }
+    system("clear");
+    print_tic_tac_toe(all);
     if (all->winner == 'X')
         ll_print("You Won !\n");
     else
