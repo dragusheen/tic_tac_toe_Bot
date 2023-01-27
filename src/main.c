@@ -13,4 +13,5 @@ int main(void)
     all_info *all = create_all();
     game_loop(all);
     destroy_all(all);
+    endwin();
 }

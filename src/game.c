@@ -9,7 +9,7 @@
 
 void game_loop(all_info *all)
 {
-    lls_i2 *move = malloc(sizeof(lls_i2));
+    s_i2 *move = malloc(sizeof(s_i2));
     move->x = 1; move->y = 1;
     while (verif_end(all) == 0){
         choose_placement(move, all);
@@ -18,15 +18,15 @@ void game_loop(all_info *all)
             break;
         ai_turn(all);
     }
-    free(move);
-    endwin();
-    ll_print("\n");
+    free(move); refresh(); clear();
+    printw("\n");
     for (int i = 0; i < 3 ; i++)
-        ll_print("{c}|{c}|{c}\n", B[i][0], B[i][1], B[i][2]);
+        printw("%c|%c|%c\n", B[i][0], B[i][1], B[i][2]);
     if (all->winner == 'X')
-        ll_print("You Won !\n\n");
+        printw("\nYou Won !\n\n");
     else if ( all->winner == 'O')
-        ll_print("You Lost !\n\n");
+        printw("\nYou Lost !\n\n");
     else
-        ll_print("Equal !\n\n");
+        printw("\nEqual !\n\n");
+    refresh(); usleep(4000000);
 }

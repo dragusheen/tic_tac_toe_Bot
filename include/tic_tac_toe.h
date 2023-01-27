@@ -13,10 +13,21 @@
 
 //General Include
     #include <ncurses.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <stdlib.h>
+    #include <unistd.h>
+    #include <time.h>
+    #include <sys/types.h>
+    #include <sys/stat.h>
+    #include <dirent.h>
+    #include <errno.h>
+    #include <fcntl.h>
+    #include <unistd.h>
+
 
 
 //Personal Include
-    #include "lit_lib/lit_lib.h"
 
 
 /*========================== STRUCTURE =======================*/
@@ -31,6 +42,11 @@ typedef struct all_info{
     char winner;
 } all_info;
 
+typedef struct s_i2{
+    int x;
+    int y;
+} s_i2 ;
+
 /*============================= SRC ==========================*/
 
 /*AI*/
@@ -43,6 +59,7 @@ char **create_board(void);
 /*Func*/
 char **duptab(char **tab);
 int equal3(char a, char b, char c);
+s_i2 *len_tab(char **table);
 
 /*Game*/
 void game_loop(all_info *all);
@@ -59,7 +76,7 @@ all_info *create_all(void);
 void destroy_all(all_info *all);
 
 /*Player*/
-void choose_placement(lls_i2 *move, all_info *all);
+void choose_placement(s_i2 *move, all_info *all);
 
 /*Verif End*/
 int verif_end(all_info *all);

@@ -7,7 +7,7 @@
 
 #include "../include/tic_tac_toe.h"
 
-lls_i2 *set_movement(lls_i2 *move, int key)
+s_i2 *set_movement(s_i2 *move, int key)
 {
     if ( key == KEY_UP && move->x > 0)
         move->x--;
@@ -20,7 +20,7 @@ lls_i2 *set_movement(lls_i2 *move, int key)
     return move;
 }
 
-void choose_placement(lls_i2 *move, all_info *all)
+void choose_placement(s_i2 *move, all_info *all)
 {
     char **dup = duptab(B); int key = 0;
     while (1){
