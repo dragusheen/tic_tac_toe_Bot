@@ -24,9 +24,7 @@ The goal of this project is to design a <b>bot</b> able to play against a human 
 <h4>At the root of the project</h4>
 
 <blockquote>
-<code>
-make<br>
-<br>
+<code>make<br>
 ./tic_tab_toe
 </code>
 </blockquote>
