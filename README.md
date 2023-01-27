@@ -76,21 +76,21 @@ The algorithm consists of the following steps<br>
 
 ***
 
-<center>
 
-<h2><U>Example</U></h2>
+<h2 align = "center"><U>Example</U></h2>
+<h6><br></h6>
+<h3 align = "right">During a game</h3>
+<img src = "extern/ScreenShot_game_1.png" alt = "C" width = "80"  height = "90" title = "Game" align = "right">
 <h6><br></h6>
 <h3>Winning a game</h3>
-<video width = "120" height = "145" loop align = "right">
-    <source src = "extern/example_video_1_Won.mp4" type = video/mp4>
-</video>
+<img src = "extern/ScreenShot_game_2.png" alt = "C" width = "100"  height = "110" title = "Equality">
+<h6><br></h6>
+<h3 align = "right">The game end with an equality</h3>
+<img src = "extern/ScreenShot_game_3.png" alt = "C" width = "100"  height = "110" title = "Equality" align = "right">
 <h6><br></h6>
 <h3>Losing a game</h3>
-<video width = "120" height = "145" loop align = "right">
-    <source src = "extern/example_video_1_Lose.mp4" type = video/mp4>
-</video>
-
-</center>
+<img src = "extern/ScreenShot_game_4.png" alt = "C" width = "100"  height = "110" title = "Equality">
+<h6><br></h6>
 <p>
 
 ***
@@ -98,4 +98,5 @@ The algorithm consists of the following steps<br>
 <h6><br></h6>
 <h3><U>Language and Tools</U></h3>
 <br>
-<img src = "https://img.icons8.com/color/480/c-programming.png" alt = "C" width = "40"  height = "40" title = "C"> <img src = "https://cdn.freebiesupply.com/images/large/2x/linux-logo-png-transparent.png" alt = "Linux" title = "linux" width = "40" height = "40">
+<img src = "https://img.icons8.com/color/480/c-programming.png" alt = "C" width = "40"  height = "40" title = "C">
+<img src = "https://cdn.freebiesupply.com/images/large/2x/linux-logo-png-transparent.png" alt = "Linux" title = "linux" width = "40" height = "40">
