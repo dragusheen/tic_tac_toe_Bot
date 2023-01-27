@@ -27,6 +27,6 @@ void game_loop(all_info *all)
     else if ( all->winner == 'O')
         printw("\nYou Lost !\n\n");
     else
-        printw("\nEqual !\n\n");
+        printw("\nEquality !\n\n");
     refresh(); usleep(4000000);
 }

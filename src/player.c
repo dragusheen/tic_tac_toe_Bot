@@ -24,6 +24,7 @@ void choose_placement(s_i2 *move, all_info *all)
 {
     char **dup = duptab(B); int key = 0;
     while (1){
+        printw("\n");
         for (int i = 0; i < 3 ; i++)
             printw("%c|%c|%c\n", dup[i][0], dup[i][1], dup[i][2]);
         dup[move->x][move->y] = B[move->x][move->y]; key = getch();

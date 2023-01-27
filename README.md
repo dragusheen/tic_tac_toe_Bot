@@ -76,6 +76,25 @@ The algorithm consists of the following steps<br>
 
 ***
 
+<center>
+
+<h2><U>Example</U></h2>
+<h6><br></h6>
+<h3>Winning a game</h3>
+<video width = "120" height = "145" loop align = "right">
+    <source src = "extern/example_video_1_Won.mp4" type = video/mp4>
+</video>
+<h6><br></h6>
+<h3>Losing a game</h3>
+<video width = "120" height = "145" loop align = "right">
+    <source src = "extern/example_video_1_Lose.mp4" type = video/mp4>
+</video>
+
+</center>
+<p>
+
+***
+
 <h6><br></h6>
 <h3><U>Language and Tools</U></h3>
 <br>
