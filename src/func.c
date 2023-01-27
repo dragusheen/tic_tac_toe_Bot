@@ -21,3 +21,10 @@ char **duptab(char **tab)
     }
     return dup_t;
 }
+
+int equal3(char a, char b, char c)
+{
+    if (a == b && a == c && ( a == 'X' || a == 'O'))
+        return 1;
+    return 0;
+}

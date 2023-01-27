@@ -8,12 +8,13 @@
 SRC	=	include/tic_tac_toe.h	\
 		$(wildcard src/*.c)		\
 
-LIB	=	ll	\
+LIB	=	-lll		\
+		-lncurses	\
 
 NAME	=	tic_tac_toe
 
 all: lib
-	gcc -Wall $(SRC) -o $(NAME) -L. -l$(LIB)
+	gcc -Wall $(SRC) -o $(NAME) -L. $(LIB)
 
 clean:
 	rm -f *.o

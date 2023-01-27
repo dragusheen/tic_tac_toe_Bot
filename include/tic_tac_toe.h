@@ -12,6 +12,7 @@
 /*=========================== INCLUDE ========================*/
 
 //General Include
+    #include <ncurses.h>
 
 
 //Personal Include
@@ -41,6 +42,7 @@ char **create_board(void);
 
 /*Func*/
 char **duptab(char **tab);
+int equal3(char a, char b, char c);
 
 /*Game*/
 void game_loop(all_info *all);
@@ -57,13 +59,15 @@ all_info *create_all(void);
 void destroy_all(all_info *all);
 
 /*Player*/
-void player_turn(all_info *all);
-
-/*Print Tic Tac Toe*/
-void print_tic_tac_toe(all_info *all);
+void choose_placement(lls_i2 *move, all_info *all);
 
 /*Verif End*/
 int verif_end(all_info *all);
+
+
+/*============================= SRC ==========================*/
+
+    #define B all->board
 
 
 #endif /* !PROJECT_H_ */

@@ -9,6 +9,7 @@
 
 int main(void)
 {
+    initscr(); cbreak(); noecho(); keypad(stdscr, TRUE);
     all_info *all = create_all();
     game_loop(all);
     destroy_all(all);
